@@ -62,12 +62,19 @@ class _DicePageState extends State<DicePage> {
               ),
             ],
           ),
-          const SizedBox(height: 20),
+          const SizedBox(
+              height: 20
+          ),
           Text(
             'The total roll is ${left + right}',
-            style: const TextStyle(fontSize: 30.0, color: Colors.black),
+            style: const TextStyle(
+                fontSize: 30.0,
+                color: Colors.black
+            ),
           ),
-          const SizedBox(height: 10),
+          const SizedBox(
+              height: 10
+          ),
           Text(
                 () {
               if (left > right) {
@@ -78,9 +85,15 @@ class _DicePageState extends State<DicePage> {
                 return 'Both dice rolls are equal';
               }
             }(),
-            style: const TextStyle(fontSize: 30.0, color: Colors.black),
+            style: const TextStyle(
+                fontSize: 30.0,
+                color: Colors.
+                black
+            ),
           ),
-          const SizedBox(height: 20),
+          const SizedBox(
+              height: 20
+          ),
           TextButton(
             onPressed: () {
               setState(() {
@@ -90,7 +103,10 @@ class _DicePageState extends State<DicePage> {
             },
             child: const Text(
               'Roll Again',
-              style: TextStyle(fontSize: 25, color: Colors.white),
+              style: TextStyle(
+                  fontSize: 25,
+                  color: Colors.white
+              ),
             ),
           ),
         ],
